@@ -15,8 +15,8 @@ void kernel_main(void) {
     printf("8\n");
     printf("9\n");
     printf("10\n");
-    printf("11\n");
-    printf("12\n");
+    printf("11\ttab\n");
+    printf("12	tab\n");
     printf("13\n");
     printf("14\n");
     printf("15\n");

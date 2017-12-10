@@ -44,6 +44,9 @@ void terminal_putchar(char c) {
         terminal_row++;
         terminal_column = 0;
     }
+    else if (uc == '\t') {
+        terminal_writestring("    ");
+    }
     else {
     	if (++terminal_column == VGA_WIDTH) {
     		terminal_column = 0;
