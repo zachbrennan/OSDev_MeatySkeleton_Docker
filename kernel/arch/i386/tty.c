@@ -45,12 +45,20 @@ void terminal_putchar(char c) {
         terminal_column = 0;
     }
     else {
-    	terminal_putentryat(uc, terminal_color, terminal_column, terminal_row);
     	if (++terminal_column == VGA_WIDTH) {
     		terminal_column = 0;
-    		if (++terminal_row == VGA_HEIGHT)
-    			terminal_row = 0;
-    	}
+        }
+        else if (terminal_row == VGA_HEIGHT) {
+            terminal_row = VGA_HEIGHT - 1;
+            terminal_buffer = VGA_MEMORY;
+            for (size_t y = 0; y < VGA_HEIGHT; y++) {
+        		for (size_t x = 0; x < VGA_WIDTH; x++) {
+        			const size_t index = y * VGA_WIDTH + x;
+        			terminal_buffer[index] = vga_entry(terminal_buffer[index + VGA_WIDTH], terminal_color);
+        		}
+        	}       
+        }
+    	terminal_putentryat(uc, terminal_color, terminal_column, terminal_row);
     }
 }
 
