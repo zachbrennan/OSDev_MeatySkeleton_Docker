@@ -51,8 +51,8 @@ void terminal_putchar(char c) {
     	if (++terminal_column == VGA_WIDTH) {
     		terminal_column = 0;
         }
-        else if (terminal_row == VGA_HEIGHT) {
-            terminal_row = VGA_HEIGHT - 1;
+        else if (terminal_row == (VGA_HEIGHT - 1)) {
+            terminal_row = VGA_HEIGHT - 2;
             terminal_buffer = VGA_MEMORY;
             for (size_t y = 0; y < VGA_HEIGHT; y++) {
         		for (size_t x = 0; x < VGA_WIDTH; x++) {
