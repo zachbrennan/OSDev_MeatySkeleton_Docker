@@ -20,7 +20,7 @@ void kernel_main(void) {
     printf("13\n");
     printf("14\n");
     printf("15\n");
-    printf("16\n");
+    printf("1\b6\n");
     printf("17\n");
     printf("18\n");
     printf("19\n");
