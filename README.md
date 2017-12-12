@@ -52,11 +52,19 @@ you can simply ```git clone``` the OSDev Meaty Skeleton repo, and then move the 
 from this repo into the new one that you cloned.
 
 Current Goals:
+
 [✓]Builds image
+
 [✓]Compiles code in Docker
+
 [✓]Newline support
+
 [✓]Terminal scrolling
+
 []Interrupt support (Needed for KB support)
+
 []PS/2 Keyboard support
+
 []USB Keyboard support???
+
 []Basic shell ([got an idea of how that works](https://github.com/zachbrennan/shell))
