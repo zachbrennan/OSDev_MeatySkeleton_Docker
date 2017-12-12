@@ -53,18 +53,18 @@ from this repo into the new one that you cloned.
 
 Current Goals:
 
-[✓]Builds image
+- [x] Builds image
 
-[✓]Compiles code in Docker
+- [x] Compiles code in Docker
 
-[✓]Newline support
+- [x] Newline support
 
-[✓]Terminal scrolling
+- [x] Terminal scrolling
 
-[]Interrupt support (Needed for KB support)
+- [ ] Interrupt support (Needed for KB support)
 
-[]PS/2 Keyboard support
+- [ ] PS/2 Keyboard support
 
-[]USB Keyboard support???
+- [ ] USB Keyboard support???
 
-[]Basic shell ([got an idea of how that works](https://github.com/zachbrennan/shell))
+- [ ] Basic shell ([got an idea of how that works](https://github.com/zachbrennan/shell))
