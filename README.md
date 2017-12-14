@@ -51,7 +51,7 @@ continue to, edit the given code. If you want to run the original tutorial code,
 you can simply ```git clone``` the OSDev Meaty Skeleton repo, and then move the *Makefile* and *Dockerfile*
 from this repo into the new one that you cloned.
 
-Current Goals:
+### Current Goals:
 
 - [x] Builds image
 
